@@ -13,6 +13,7 @@ case "$1" in
         exit 1
     fi
     : ADD START ACTIONS HERE
+    chmod +x $QPKG_ROOT/frpc
     $QPKG_ROOT/frpc --config_dir /shared/homes/admin/frpc/ &
     ;;
 
